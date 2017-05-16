@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input type="file" id="test">
+</body>
+</html>
+
+<script src="Thumbnails.js"></script>
+<script>
+    var a = new Thumbnails('test',{
+        imgStyle: {
+            maxHeight: '100px',
+            marginTop: '25px',
+            marginLeft: '25px'
+        },
+        imgAttr: {
+            title: '这是第一个图片',
+            alt: '图片无法显示'
+        },
+        single: false,
+        reLoad: true
+    })
+</script>
